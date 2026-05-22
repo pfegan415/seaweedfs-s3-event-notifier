@@ -1,7 +1,7 @@
 [project]
 name = "seaweedfs-s3-event-notifier"
 version = "0.1.0"
-description = "Add your description here"
+description = "An app which receives event notifications from SeaweedFS and formats each message to the schema of an AWS S3 event before sending to an AWS SQS compatible message queue"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
