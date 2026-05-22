@@ -4,3 +4,14 @@ run-local:
 
 test:
     uv run pytest
+
+build-image:
+    docker build -t seaweedfs-s3-event-notifier:latest .
+
+run-container:
+    docker run \
+    --name notifier \
+    --network notifier-network \
+    -p 8081:8081 \
+    --rm \
+    seaweedfs-s3-event-notifier:latest
