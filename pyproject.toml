@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "blacksheep>=2.6.2",
+    "boto3>=1.43.13",
     "granian>=2.7.4",
 ]
 
